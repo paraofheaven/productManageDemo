@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- <?php $timeFlag = time(); ?> -->
+	<meta charset="utf-8">
+	<title>产品管理</title>
+	<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <!-- <script>window.FTA && window.FTA("","无线:产品管理页H5","","/无线/产品管理页H5");</script> -->
+	<link rel="stylesheet" type="text/css" href="http://img2.tuniucdn.com/ms/201610120001/common.css,font/font.css,common/loading.css" />
+	<link rel="stylesheet" type="text/css" href="http://img2.tuniucdn.com/mj/201610190001/modules/tourguide/product-manager/index.css">
+	<style type="text/css">
+		.mui-card-line .mui-card-header {
+		    font-size: 14px;
+		    color: #222222;
+		    text-align: left;
+		}
+		.mui-card-line .mui-card-content-inner {
+		    position: relative;
+		    padding-top: 0;
+		}
+		.mui-card-line .mui-card-header:after {
+			background:#e8e8e8;
+		}
+		.mui-card-line .mui-table-view-cell-grey {
+		    background: #ffffff;
+		    border: 1px solid #d4d4d4;
+		    border-radius: 6px;
+		    font-size: 16px;
+		    color: #222222;
+		    text-align: left;
+		}
+
+		#segmentedControlContents .mui-table-view-cell.selected{
+			color: #007aff;
+		}
+	</style>
+</head>
+<body class="wrapper">
+
+	<router-view></router-view>
+
+	<div class="loading" v-show="showLoading">
+		<div class="spinner">
+			<div class="spinner-inner">
+			</div>
+			<div class="cutout"></div>
+			<div class="s-circle"></div>
+		</div>
+		<div class="loading-logo"><span class="icon-logo"></span></div>
+	</div>
+	<script type="text/javascript" src="http://img.tuniucdn.com/mj/201610190001/modules/explorer/jquery-v1.10.2.js"></script>
+	<script type="text/javascript" src="http://img.tuniucdn.com/j/201610190001/wifi/guideservice/apply/jquery-file-upload/js/vendor/jquery.ui.widget.js"></script>
+	<script type="text/javascript" src="http://img.tuniucdn.com/j/201610190001/wifi/guideservice/apply/jquery-file-upload/js/jquery.iframe-transport.js"></script>
+	<script type="text/javascript" src="http://img.tuniucdn.com/j/201610190001/wifi/guideservice/apply/jquery-file-upload/js/jquery.fileupload.js"></script>
+	<script type="text/javascript" src="http://img2.tuniucdn.com/mj/201610190001/modules/tourguide/product-manager/plugins/swiperMaker.js"></script>
+
+
+	<script type="text/javascript" src="http://img2.tuniucdn.com/mj/201610190001/lib/seajs/1.3.1/sea.js"></script>
+	<script type="text/javascript" src="file:///D:/tuniu_workspace/test/m2015/js/modules/tourguide/product-manager/sea-config.js"></script>
+	<script type="text/javascript" src="http://img2.tuniucdn.com/mj/201610190001/modules/tourguide/product-manager/index.js"></script>
+
+	<script type="text/javascript">
+		/*产品列表数据*/
+		window.productList=[
+            {
+            	id:0,
+                url:'http://img2.tuniucdn.com/site/m2015/js/modules/tourguide/product-manager/images/muwu.jpg',
+                title:'三亚蜜月旅拍婚纱照4日游',
+                area:'澳大利亚 大堡礁',
+                isSelected:false,
+                isActive:false
+            },
+            {
+            	id:1,
+                url:'http://img2.tuniucdn.com/site/m2015/js/modules/tourguide/product-manager/images/muwu.jpg',
+                title:'三亚蜜月旅拍婚纱照4日游',
+                area:'中国 长城',
+                isSelected:false,
+                isActive:false
+            },
+        ];
+        
+        window.themeTitleList=[
+				{
+					text:'城市观光',
+					isActive:true
+				},
+				{
+					text:'户外探险',
+					isActive:false
+				},
+				{
+					text:'美食休闲',
+					isActive:false
+				},
+				{
+					text:'自然人文',
+					isActive:false
+				},
+				{
+					text:'自然人文2',
+					isActive:false
+				},
+			];
+
+        window.themeContentList=[
+				[
+					{
+						text:'深度游玩',
+						isSelected:false
+					},
+					{
+						text:'节日狂欢',
+						isSelected:false
+					},
+					{
+						text:'特色集市2',
+						isSelected:false
+					},
+					{
+						text:'特色集市3',
+						isSelected:false
+					},
+					{
+						text:'特色集市',
+						isSelected:false
+					}
+				],
+				[
+					{
+						text:'登山徒步',
+						isSelected:false
+					},
+					{
+						text:'极地体验',
+						isSelected:false
+					},
+					{
+						text:'极限运动',
+						isSelected:false
+					},
+					{
+						text:'沙海驼影',
+						isSelected:false
+					}
+				],
+				[
+					{
+						text:'温泉SP',
+						isSelected:false
+					},
+					{
+						text:'购物天堂',
+						isSelected:false
+					},
+					{
+						text:'特色美食',
+						isSelected:false
+					},
+					{
+						text:'深夜食堂',
+						isSelected:false
+					}
+				],
+				[
+					{
+						text:'田园风光',
+						isSelected:false
+					},
+					{
+						text:'历史名迹',
+						isSelected:false
+					},
+					{
+						text:'冰雪奇缘',
+						isSelected:false
+					},
+					{
+						text:'丛林探幽',
+						isSelected:false
+					}
+				],
+				[
+					{
+						text:'田园风光',
+						isSelected:false
+					},
+					{
+						text:'历史名迹',
+						isSelected:false
+					},
+					{
+						text:'冰雪奇缘',
+						isSelected:false
+					},
+					{
+						text:'丛林探幽',
+						isSelected:false
+					}
+				]
+			];
+		window.TypeNameList=[
+				'景点名胜',
+				'游玩项目',
+				'餐厅',
+				'酒店',
+				'其他'
+			];
+		window.routeArrays=[
+			[
+				{
+					id:0,
+					title:'五菱宏光S-秋名山等你',
+					isSelected:false
+				},
+				{
+					id:1,
+					title:'五菱宏光S-秋名山等你01',
+					isSelected:false
+				},
+				{
+					id:2,
+					title:'五菱宏光S-秋名山等你02',
+					isSelected:false
+				}
+			]
+		];
+
+
+		window.newProduct={
+			/*step1 data*/
+			name:'',
+			type:1,
+			/*step2 data*/
+			introduce:'',
+			themeArray:[],
+			themeArrayMaxLenth:3,
+			headerPics:[
+				{
+					url:"http://img2.tuniucdn.com/site/m2015/js/modules/tourguide/product-manager/images/yuantiao.jpg"
+				}
+			],
+			headerPictureMaxLength:3,
+			/*step3 data*/
+			serviceDetail:'',
+			wanfaPics:[
+				{
+					url:'http://img2.tuniucdn.com/site/m2015/js/modules/tourguide/product-manager/images/yuantiao.jpg'
+				}
+			],
+			wanfaPicsMaxLenth:6,
+			carPicsMaxLength:3,
+			hasCar:false,
+			carNum:'',
+			carPics:[
+				{
+					url:'http://img2.tuniucdn.com/site/m2015/js/modules/tourguide/product-manager/images/muwu.jpg'
+				}
+			],
+			/*step3 loneline data*/
+			routeManageArray:[
+				{
+					wanfaArray:[]
+				}
+			],
+			/*step4 data*/
+			priceInfoList:[],
+			serviceContain:'',
+			serviceNotContain:'',
+			/*step5 data*/
+			attention:''
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+{
+  "name": "gulp_test",
+  "version": "1.0.0",
+  "description": "gulp vue",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "para",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-vue-module": "^0.1.2"
+  },
+  "keywords": [
+    "gulp",
+    "vue"
+  ]
+}

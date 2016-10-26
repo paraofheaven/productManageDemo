@@ -1,0 +1,1701 @@
+@charset "UTF-8";
+a, address, b, body, code, dd, del, div, dl, dt, em, font, form, h1, h2, h3, h4, h5, h6, html, i, iframe, img, label, li, ol, p, pre, small, span, strong, u, ul {
+  margin: 0;
+  padding: 0; }
+
+article, aside, footer, header, main, nav, section {
+  display: block; }
+
+button, body input[type=button], input[type=submit] {
+  -webkit-apperance: button;
+  cursor: pointer; }
+
+button[disabled], input[disabled] {
+  cursor: default; }
+
+ol, ul, li {
+  list-style: none; }
+
+li {
+  overflow: inherit; }
+
+img {
+  border: 0;
+  vertical-align: middle; }
+
+em, i, u {
+  font-style: normal; }
+
+html{
+  height: 100%; }
+
+html {
+  *overflow-x: hidden;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
+
+body {
+  font-size: 14px;
+  font-family: "Microsoft YaHei", "微软雅黑", Arial, Verdana, "宋体";
+  line-height: 1.42857;
+  color: #333333;
+  background: #F0F0F0; }
+
+a {
+  color: #333333;
+  text-decoration: none; }
+
+a:hover {
+  color: #333333; }
+
+.clearfix:before, .clearfix:after {
+  content: ' ';
+  display: table; }
+
+.clearfix:after {
+  clear: both; }
+
+.pull-left {
+  float: left; }
+
+.pull-right {
+  float: right; }
+
+.invisible {
+  visibility: hidden; }
+
+.show {
+  display: block; }
+
+.hide {
+  display: none; }
+
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+  -webkit-appearance: none; }
+
+html {
+  font-size: 10px; }
+
+span.gray {
+  color: #999 !important; }
+
+header {
+  background: #fff !important; }
+
+.order-wrap, .refuse-wrap, .change-wrap {
+  min-width: 320px;
+  margin: 0 auto;
+  font-size: 1.4rem; }
+
+.order-wrap .header-nav {
+  padding: 10px 20px;
+  border-top: 1px solid #d4d4d4;
+  border-bottom: 1px solid #d4d4d4;
+  background: #fff; }
+
+.order-wrap .left-nav, .order-wrap .right-nav {
+  display: inline-block;
+  position: relative;
+  width: 49%;
+  font-size: 1.5rem;
+  text-align: center;
+  line-height: 1.6; }
+
+.order-wrap .left-nav {
+  border-right: 1px solid #d4d4d4; }
+
+.order-wrap .icon-down4 {
+  display: inline-block;
+  -webkit-transition: transform .5s;
+  transition: transform .5s;
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg); }
+
+.order-wrap .rotate {
+  display: inline-block;
+  -webkit-transition: transform .5s;
+  transition: transform .5s;
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg); }
+
+.order-wrap .state-items, .order-wrap .time-items {
+  display: none;
+  position: absolute;
+  top: 35px;
+  left: 10%;
+  width: 105px;
+  padding: 5px 10px;
+  box-shadow: 0 0 2px #666;
+  background: #fff;
+  text-align: left; }
+  .order-wrap .state-items li a, .order-wrap .time-items li a {
+    display: block; }
+  .order-wrap .state-items li:hover, .order-wrap .time-items li:hover {
+    color: #ff8800; }
+
+.order-wrap .order-item {
+  margin-top: 10px;
+  border-bottom: 1px solid #d4d4d4;
+  background: #fff; }
+  .order-wrap .order-item a {
+    display: inline-block;
+    width: 78px;
+    height: 30px;
+    border-radius: 4px;
+    color: #fff;
+    text-align: center;
+    line-height: 30px; }
+
+.order-wrap .item-top, .order-wrap .order-detail, .order-wrap .item-bottom {
+  padding-left: 15px;
+  padding-right: 15px; }
+
+.order-wrap .item-top {
+  padding-top: 10px;
+  color: #999; }
+  .order-wrap .item-top p {
+    display: inline-block;
+    width: 55%; }
+  .order-wrap .item-top .order-num {
+    width: 43%;
+    text-align: right; }
+  .order-wrap .item-top span {
+    color: #ff8800; }
+
+.order-wrap .order-detail {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #d4d4d4;
+  line-height: 1.5; }
+  .order-wrap .order-detail h3 {
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    font-size: 1.6rem; }
+  .order-wrap .order-detail p {
+    color: #999;
+    font-size: 1.3rem; }
+  .order-wrap .order-detail .time span {
+    display: inline-block;
+    width: 48%; }
+
+.order-wrap .item-bottom {
+  padding-top: 7px;
+  padding-bottom: 7px; }
+  .order-wrap .item-bottom p {
+    display: inline-block; }
+
+.order-wrap .money {
+  width: 25%;
+  color: #ff8800;
+  font-weight: 600; }
+
+.order-wrap .choose-btn {
+  width: 73%;
+  text-align: right; }
+
+.order-wrap .trip-change {
+  background: #ff7c70; }
+
+.order-wrap .check-order {
+  background: #ff8800; }
+
+/*拒绝接单*/
+.reason {
+  padding: 25px 15px; }
+  .reason textarea {
+    width: 96%;
+    padding: 5px;
+    border: 1px solid #23cc77;
+    border-radius: 4px;
+    outline: none; }
+  .reason a {
+    display: block;
+    width: 99%;
+    height: 38px;
+    border-radius: 4px;
+    text-align: center;
+    line-height: 38px; }
+  .reason .submit {
+    margin: 50px auto 20px;
+    border: 1px solid #ff8800;
+    color: #ff8800; }
+  .reason .cancel {
+    border: 1px solid #ff8800;
+    background: #ff8800;
+    color: #fff; }
+
+/*变更行程*/
+.change-wrap p {
+  margin: 0 auto 10px; }
+
+.change-wrap textarea {
+  margin-bottom: 20px; }
+
+.change-wrap .input-money {
+  padding: 20px 10px;
+  border: 1px solid #23cc77;
+  border-radius: 4px;
+  color: #ff8800;
+  font-size: 2.2rem; }
+
+.change-wrap input {
+  width: 80%;
+  -webkit-appearance: none;
+  border: 0;
+  outline: none;
+  color: #ff8800;
+  font-size: 2.2rem; }
+
+.change-wrap .save {
+  margin: 50px auto 20px;
+  border: 1px solid #ff8800;
+  background: #ff8800;
+  color: #fff; }
+
+.change-wrap .cancel {
+  border: 1px solid #ff8800;
+  background: #fff;
+  color: #ff8800; }
+
+.bomb {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50%;
+  margin-top: -200px;
+  margin-left: -25%;
+  padding: 30px 15px;
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  font-size: 1.4rem;
+  text-align: center; }
+
+.no-order {
+  display: none;
+  margin: 20px auto;
+  text-align: center; }
+  
+  
+.product-header {
+    height: 44px;
+    position: fixed;
+    z-index: 100;
+    right: 0;
+    left: 0;
+    margin: 0;
+    top: 0;
+    -webkit-box-shadow: 0 1px 6px #ccc;
+    box-shadow: 0 1px 6px #ccc;
+}
+
+.product-header span {
+	display: inline-block
+}  
+.product-header .header-left {
+	width: 8%;
+	color: #ff8800;
+	font-weight: 600;
+	margin-left: 5px;
+	line-height: 1;
+	font-size: 20px;
+	position: relative;
+	z-index: 20;
+	padding-top: 10px;
+	padding-bottom: 10px;
+  display: inline-block;
+}
+  
+.product-header .header-center {
+	right: 60px;
+    left: 60px;
+    display: inline-block;
+    overflow: hidden;
+    width: auto;
+    margin: 0;
+    text-overflow: ellipsis;
+    position: absolute;
+    line-height: 44px;
+    font-size: 17px;
+    text-align: center;
+}
+
+.product-header .header-right {
+	float: right;
+	margin-right: 5px;
+	font-size: 16px;
+	line-height: 44px;
+}
+
+
+
+.product-wrap, .refuse-wrap, .change-wrap {
+  min-width: 320px;
+  margin: 0 auto;
+  font-size: 1.4rem; 
+	margin-top: 54px;  
+	margin-bottom: 50px;
+}
+
+.product-wrap .header-nav {
+  padding: 10px 20px;
+  border-top: 1px solid #d4d4d4;
+  border-bottom: 1px solid #d4d4d4;
+  background: #fff; }
+
+.product-wrap .left-nav, .product-wrap .right-nav {
+  display: inline-block;
+  position: relative;
+  width: 49%;
+  font-size: 1.5rem;
+  text-align: center;
+  line-height: 1.6; }
+
+.product-wrap .left-nav {
+  border-right: 1px solid #d4d4d4; }
+
+.product-wrap .icon-down4 {
+  display: inline-block;
+  -webkit-transition: transform .5s;
+  transition: transform .5s;
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg); }
+
+.order-wrap .rotate {
+  display: inline-block;
+  -webkit-transition: transform .5s;
+  transition: transform .5s;
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg); }
+
+.product-wrap .state-items, .product-wrap .time-items {
+  display: none;
+  position: absolute;
+  top: 35px;
+  left: 10%;
+  width: 105px;
+  padding: 5px 10px;
+  box-shadow: 0 0 2px #666;
+  background: #fff;
+  text-align: left; }
+  .product-wrap .state-items li a, .product-wrap .time-items li a {
+    display: block; }
+  .product-wrap .state-items li:hover, .product-wrap .time-items li:hover {
+    color: #ff8800; }
+
+.product-wrap .product-item {
+  margin-top: 10px;
+  border-bottom: 1px solid #d4d4d4;
+  background: #fff; }
+  .product-wrap .product-item a {
+    display: inline-block;
+    width: 78px;
+    height: 30px;
+    border-radius: 4px;
+    color: #fff;
+    text-align: center;
+    line-height: 30px; 
+    }
+
+.product-wrap .item-top, .product-wrap .product-detail, .product-wrap .item-bottom {
+  padding-left: 15px;
+  padding-right: 15px; 
+      }
+
+.product-wrap .item-top {
+  padding-top: 10px;
+  color: #999; }
+  .product-wrap .item-top p {
+    display: inline-block;
+    width: 55%; }
+  .product-wrap .item-top .product-num {
+    width: 43%;
+    text-align: right; }
+  .product-wrap .item-top span {
+    color: #ff8800; }
+
+.product-wrap .product-detail {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #d4d4d4;
+  line-height: 1.5; }
+  .product-wrap .product-detail h3 {
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    font-size: 1.6rem; }
+  .product-wrap .product-detail p {
+    color: #999;
+    font-size: 1.3rem; }
+  .product-wrap .product-detail .time span {
+    display: inline-block;
+    width: 48%; }
+
+.product-wrap .item-bottom {
+  /*padding-top: 7px;
+  padding-bottom: 7px; */
+  background-color: #ff8800;}
+  .product-wrap .item-bottom p {
+    display: inline-block; }
+
+.product-wrap .money {
+  width: 25%;
+  color: #ff8800;
+  font-weight: 600; }
+
+.product-wrap .choose-btn {
+  width: 73%;
+  text-align: right; }
+
+.product-wrap .trip-change {
+  background: #ff7c70; }
+
+.product-wrap .check-product {
+  background: #ff8800; }
+
+
+.product-wrap .product-detail .product-media-object.pull-left {
+    margin-right: 10px;
+}
+.product-wrap .product-detail .product-media-object {
+    line-height: 31px;
+    /*max-width: 100px;*/
+    height: 62px;
+}
+.product-wrap .product-detail .product-media-body {
+		overflow: hidden;
+		height: 62px;
+}
+  .product-wrap .product-detail .product-media-body h3 {
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    font-size: 1.6rem; }
+  .product-wrap .product-detail .product-media-body p {
+    color: #999;
+    font-size: 1.3rem; 
+    /*margin-top: 10px;*/
+}
+footer .footer-button {
+	  width: 100%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 1.4rem;
+    border-radius: 4px;
+    font-family: sans-serif;
+    color: #fff;
+    background-color: #f80;
+    border: 1px solid #f80;
+    position: fixed;
+    bottom: 0;
+		z-index: 100;
+
+}
+footer .footer-button.footer-button-delete{
+    background-color: #ff7c70 !important;
+    border: 1px solid #ff7c70 !important;
+}
+footer .footer-button a {
+  font-family:.PingFang-SC-Regular;
+	font-size:16px;
+	color:#ffffff;
+	text-align:center;
+}
+ 
+.product-wrap .product-item .buttom-button {
+	width: 100%;
+	display: table;
+}
+.product-wrap .product-item .buttom-button .buttom-button-inline {
+	display: table-cell;
+	width: 1%;
+	height: 40px;
+	border-radius: 0;
+	color: #fff;
+	text-align: center;
+	line-height: 40px; 
+}
+.product-wrap .product-item .buttom-button .buttom-button-inline.buttom-no-active {
+	background:#eaeaea;
+	height:40px;
+	font-family:.PingFang-SC-Regular;
+	font-size:16px;
+	color:#bbbbbb;
+	text-align:center;
+	border-bottom: 1px solid #ff8800;
+}  
+    
+.product-wrap .item-bottom {
+	  padding-left: 0;
+    padding-right: 0;
+}
+
+.product-wrap .item-bottom.item-bottom-active {
+	display: block;
+}
+
+.header-right-button {
+	font-size:17px;
+	color:#23cc77;
+	line-height:17px;
+	text-align:right;
+	padding: 10px 0px;
+}
+a.header-right-button:hover {
+	color: #23cc77;
+}
+
+.footer-button-delete {
+	font-size:16px;
+	color:#ffffff;
+	text-align:center;
+	color: #14AB04
+}
+ ._checkbox {
+    position: relative;
+}
+
+._checkbox:after {
+    content: '';
+    display: inline-block;
+    background: url(http://img1.tuniucdn.com/site/m2015/images/wifi/txmz/check_no.png) no-repeat;
+    background-size: 20px 20px;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    z-index: 20;
+    top: 34px;
+    right: 5px;
+}
+._checkbox.active:after{
+    background: url(http://img1.tuniucdn.com/site/m2015/images/wifi/txmz/check.png) no-repeat;
+    background-size: 20px 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*card*/
+.mui-card {
+    font-size: 14px;
+    position: relative;
+    overflow: hidden;
+    margin: 10px 0px;
+    border-radius: 2px;
+    background-color: #fff;
+    background-clip: padding-box;
+    box-shadow: 0 1px 2px rgba(0,0,0,.3);
+}
+.mui-card-header {
+    font-size: 17px;
+    border-radius: 2px 2px 0 0;
+}
+.mui-card-header:after {
+    top: auto;
+    bottom: 0;
+}
+.mui-card-footer:before, .mui-card-header:after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 1px;
+    content: '';
+    -webkit-transform: scaleY(.5);
+    transform: scaleY(.5);
+    background-color: #c8c7cc;
+}
+.mui-card-content {
+    font-size: 14px;
+    position: relative;
+}
+.mui-card-content-inner {
+    position: relative;
+    padding: 15px;
+}
+.mui-card-footer {
+    color: #6d6d72;
+    border-radius: 0 0 2px 2px;
+}
+.mui-card-footer, .mui-card-header {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    padding: 10px 15px;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.mui-card-footer:before, .mui-card-header:after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 1px;
+    content: '';
+    -webkit-transform: scaleY(.5);
+    transform: scaleY(.5);
+    background-color: #c8c7cc;
+}
+.mui-card-header:after {
+    top: auto;
+    bottom: 0;
+}
+
+.mui-input-group {
+    position: relative;
+    padding: 0;
+    border: 0;
+    background-color: #fff;
+}
+.mui-input-group:before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 1px;
+    content: '';
+    -webkit-transform: scaleY(.5);
+    transform: scaleY(.5);
+    background-color: #c8c7cc;
+}
+
+
+
+.mui-card .mui-input-group .mui-input-row:last-child:after, .mui-card .mui-input-group .mui-input-row:last-child:before, .mui-card .mui-input-group:after, .mui-card .mui-input-group:before {
+    height: 0;
+}
+
+.mui-input-row {
+    clear: left;
+    overflow: hidden;
+}
+
+.mui-input-row {
+    position: relative;
+}
+
+.mui-checkbox, .mui-radio {
+    position: relative;
+}
+
+.mui-input-group .mui-input-row {
+    height: 40px;
+    background: #ffffff;
+    /*border: 1px solid #d4d4d4;*/
+    border-radius: 6px;
+}
+.mui-input-group .mui-input-row input {
+	padding-left: 10px;
+}
+.mui-input-row label {
+    line-height: 1.3;
+    float: left;
+    width: 35%;
+    padding: 11px 0px;
+}
+.mui-checkbox label, .mui-radio label {
+    display: inline-block;
+    float: none;
+    width: 100%;
+    padding-right: 58px;
+}
+
+
+button, input, optgroup, select, textarea {
+    font: inherit;
+    margin: 0;
+    color: inherit;
+}
+
+input {
+    line-height: normal;
+}
+
+input, select, textarea {
+    font-family: 'Helvetica Neue',Helvetica,sans-serif;
+    font-size: 17px;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: transparent;
+}
+
+input[type=checkbox], input[type=radio] {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+
+.mui-input-group input, .mui-input-group textarea {
+    margin-bottom: 0;
+    border: 0;
+    border-radius: 0;
+    background-color: transparent;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.mui-input-row .mui-btn+input, .mui-input-row label+input, .mui-input-row:last-child {
+    background: 0 0;
+}
+
+
+.mui-input-row label~input, .mui-input-row label~select, .mui-input-row label~textarea {
+    float: right;
+    width: 65%;
+    margin-bottom: 0;
+    padding-left: 0;
+    border: 0;
+}
+
+.mui-input-group input:last-child {
+    background-image: none;
+}
+
+
+.mui-input-group .mui-input-row:after {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 1px;
+    content: '';
+    -webkit-transform: scaleY(.5);
+    transform: scaleY(.5);
+    background-color: #c8c7cc;
+}
+
+.mui-input-group:after {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 1px;
+    content: '';
+    -webkit-transform: scaleY(.5);
+    transform: scaleY(.5);
+    background-color: #c8c7cc;
+}
+.mui-card .mui-input-group .mui-input-row:last-child:after, .mui-card .mui-input-group .mui-input-row:last-child:before, .mui-card .mui-input-group:after, .mui-card .mui-input-group:before {
+    height: 0;
+}
+
+
+.check-icon {
+    color: #33bc60;
+    float: right;
+    font-size: 20px;
+    position: absolute;
+    top: 9px;
+    right: 0;
+    display: inline-block;
+    width: 28px;
+    height: 26px;
+    border: 0;
+    outline: 0!important;
+    background-color: transparent;
+    -webkit-appearance: none;
+}
+
+textarea {
+    height: auto;
+    resize: none;
+}
+input[type=color], input[type=date], input[type=datetime-local], input[type=datetime], input[type=email], input[type=month], input[type=number], input[type=password], input[type=search], input[type=tel], input[type=text], input[type=time], input[type=url], input[type=week], select, textarea {
+    line-height: 21px;
+    width: 100%;
+    height: 38px;
+    margin-bottom: 15px;
+    -webkit-user-select: text;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: 3px;
+    outline: 0;
+    background-color: #fff;
+    -webkit-appearance: none;
+}
+input, select, textarea {
+    font-family: 'Helvetica Neue',Helvetica,sans-serif;
+    font-size: 17px;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: transparent;
+}
+textarea {
+    overflow: auto;
+}
+button, input, optgroup, select, textarea {
+    font: inherit;
+    margin: 0;
+    color: inherit;
+}
+
+.mui-input-group input, .mui-input-group textarea {
+    margin-bottom: 0;
+    border: 0;
+    border-radius: 0;
+    background-color: transparent;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.mui-input-row .mui-btn+input, .mui-input-row label+input, .mui-input-row:last-child {
+    background: 0 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.mui-table-view {
+    position: relative;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+    background-color: #fff;
+}
+
+.mui-table-view:before {
+    position: absolute;
+    right: 0;
+    left: 0;
+    height: 1px;
+    content: '';
+    -webkit-transform: scaleY(.5);
+    transform: scaleY(.5);
+    background-color: #c8c7cc;
+    top: -1px;
+}
+
+.mui-table-view-cell {
+    position: relative;
+    overflow: hidden;
+    padding: 11px 15px;
+    -webkit-touch-callout: none;
+}
+.mui-ios .mui-table-view-cell {
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+.mui-table-view-cell>a:not(.mui-btn) {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    /*margin: -11px -15px;*/
+    padding: inherit;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: inherit;
+}
+.mui-table-view-cell:after {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 15px;
+    height: 1px;
+    content: '';
+    -webkit-transform: scaleY(.5);
+    transform: scaleY(.5);
+    background-color: #c8c7cc;
+}
+.mui-navigate-right:after, .mui-push-left:after, .mui-push-right:after {
+    font-family: Muiicons;
+    font-size: inherit;
+    line-height: 1;
+    position: absolute;
+    top: 50%;
+    display: inline-block;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    text-decoration: none;
+    color: #bbb;
+    -webkit-font-smoothing: antialiased;
+}
+.mui-navigate-right:after, .mui-push-right:after {
+    right: 15px;
+    content: '\e900';
+}
+
+.mui-navigate-right.mui-navigate-right-border {
+    background: #ffffff;
+    border: 1px solid #d4d4d4;
+    border-radius: 6px;
+}
+
+
+
+.arrow-right {
+    display: block;
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    padding: 0px 5px;
+}
+
+.arrow-right.icon-arrow-left {
+	transform: rotate(180deg);
+}
+
+[name=description] {
+	height: auto;
+}
+
+.click-add {
+    display: block;
+    width: 50%;
+    margin-left: 25%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 1.4rem;
+    border-radius: 4px;
+    border: 1px solid #f80;
+    font-family: sans-serif;
+    color: #7D3A3A;
+    z-index: 100;
+    margin-top: 10px;
+    }
+    
+
+.mui-content-padded-fill {
+	min-height: 100px;
+}
+
+.mui-content-padded {
+    /*margin: 10px;*/
+}
+.mui-content-padded p:first-child {
+	margin-top: 10px;
+}
+.mui-content-padded p {
+    font-size: 14px;
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #8f8f94;
+    position: relative;
+}
+.mui-content-padded p img {
+    width: 100%;
+    height: 165px;
+}
+img {
+    border: 0;
+}
+
+
+.mui-content-padded .icon-delete {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 25px;
+}
+    
+
+
+
+
+
+
+.mui-table-view.tag {
+	background:#ffffff;
+	border:1px solid #d4d4d4;
+	border-radius:6px;
+	margin: 10px;
+}
+.mui-table-view.tag:before {
+	position: absolute;
+    right: 0;
+    left: 0;
+    height: 0px; 
+    content: '';
+    background-color: #FFFFFF;
+    top: 0px;
+}
+.tag .mui-table-view-cell:after {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 15px;
+    height: 0px;
+    content: '';
+    -webkit-transform: scaleY(.5);
+    transform: scaleY(.5);
+    background-color: #c8c7cc;
+}
+.arrow-right.icon-delete {
+	font-size: 20px;
+	top: 5px;
+	right: 0px;
+}
+
+
+
+input, button, .mui-btn {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.mui-btn-green, .mui-btn-positive, .mui-btn-success {
+    color: #fff;
+    border: 1px solid #4cd964;
+    background-color: #4cd964;
+}
+.mui-btn, button, input[type=button], input[type=reset], input[type=submit] {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 0;
+    padding: 6px 12px;
+    cursor: pointer;
+    -webkit-transition: all;
+    transition: all;
+    -webkit-transition-timing-function: linear;
+    transition-timing-function: linear;
+    -webkit-transition-duration: .2s;
+    transition-duration: .2s;
+    text-align: center;
+    vertical-align: top;
+    white-space: nowrap;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    background-color: #fff;
+    background-clip: padding-box;
+}
+    .mui-btn-green, .mui-btn-positive, .mui-btn-success {
+    color: #fff;
+    border: 1px solid #4cd964;
+    background-color: #4cd964;
+}
+
+.mui-btn.mui-btn-fill {
+	padding: 6px 35px 6px 12px;
+	margin-bottom: 10px;
+	background-color: #FFFFFF;
+	font-family:.PingFang-SC-Light;
+	font-size:16px;
+	color:#23cc77;
+	border-radius: 15px;
+}
+
+
+
+
+
+
+
+
+
+.mui-fullscreen {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.mui-row:after, .mui-row:before {
+    display: table;
+    content: ' ';
+}
+
+.mui-row.mui-fullscreen>[class*="mui-col-"] {
+    height: 100%;
+}
+.mui-row>[class*=mui-col-] {
+    float: left;
+}
+.mui-col-xs-3, .mui-control-content {
+    overflow-y: auto;
+    height: 100%;
+}
+.mui-col-xs-3 {
+    width: 50%;
+}
+.mui-col-sm-1, .mui-col-sm-10, .mui-col-sm-11, .mui-col-sm-12, .mui-col-sm-2, .mui-col-sm-3, .mui-col-sm-4, .mui-col-sm-5, .mui-col-sm-6, .mui-col-sm-7, .mui-col-sm-8, .mui-col-sm-9, .mui-col-xs-1, .mui-col-xs-10, .mui-col-xs-11, .mui-col-xs-12, .mui-col-xs-2, .mui-col-xs-3, .mui-col-xs-4, .mui-col-xs-5, .mui-col-xs-6, .mui-col-xs-7, .mui-col-xs-8, .mui-col-xs-9 {
+    position: relative;
+    min-height: 1px;
+}
+.mui-segmented-control.mui-segmented-control-inverted {
+    width: 100%;
+    border: 0;
+    border-radius: 0;
+}
+.mui-segmented-control.mui-segmented-control-vertical {
+    border-collapse: collapse;
+    border-width: 0;
+    border-radius: 0;
+}
+.mui-segmented-control {
+    font-size: 15px;
+    font-weight: 400;
+    position: relative;
+    display: table;
+    overflow: hidden;
+    width: 100%;
+    table-layout: fixed;
+    border: 1px solid #007aff;
+    border-radius: 3px;
+    background-color: transparent;
+    -webkit-touch-callout: none;
+}
+.mui-segmented-control.mui-segmented-control-inverted.mui-segmented-control-vertical .mui-control-item, .mui-segmented-control.mui-segmented-control-inverted.mui-segmented-control-vertical .mui-control-item.mui-active {
+    border-bottom: 1px solid #c8c7cc;
+}
+.mui-segmented-control.mui-segmented-control-inverted .mui-control-item.mui-active {
+    background-color: #fff;
+}
+.mui-segmented-control.mui-segmented-control-inverted .mui-control-item.mui-active {
+    color: #007aff;
+    border-bottom: 2px solid #007aff;
+    background: 0 0;
+}
+.mui-segmented-control.mui-segmented-control-inverted .mui-control-item {
+    color: inherit;
+    border: 0;
+}
+.mui-segmented-control .mui-control-item.mui-active {
+    color: #fff;
+    background-color: #007aff;
+}
+.mui-segmented-control .mui-control-item:first-child {
+    border-left-width: 0;
+}
+.mui-segmented-control.mui-segmented-control-vertical .mui-control-item {
+    display: block;
+    border-bottom: 1px solid #c8c7cc;
+    border-left-width: 0;
+}
+
+.mui-segmented-control .mui-control-item {
+    line-height: 38px;
+    display: table-cell;
+    overflow: hidden;
+    width: 1%;
+    -webkit-transition: background-color .1s linear;
+    transition: background-color .1s linear;
+    text-align: center;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #007aff;
+    border-color: #007aff;
+    border-left: 1px solid #007aff;
+}
+.mui-segmented-control .mui-control-item {
+    line-height: 50px;
+    width: 100%;
+}
+.mui-control-content {
+    position: relative;
+    display: none;
+}
+.mui-col-xs-3, .mui-control-content {
+    overflow-y: auto;
+    height: 100%;
+}
+.mui-control-content.mui-active {
+    display: block;
+}
+.mui-col-xs-9 {
+    width: 49%;
+}
+
+
+footer .mui-card {
+	position: fixed;
+	height: 244px;
+	bottom: 0;
+	width: 100%;
+}
+
+.footer-tag .mui-fullscreen {
+    position: absolute;
+    width: 100%;
+    height: 200px;
+}
+
+.mui-card-header-inline-height {
+	height: 24px;
+}
+.mui-card-header-inline {
+	position: absolute;
+	width: 100%;
+}
+.mui-card-header-inline-center {
+	width: 100%;
+	text-align: center;
+}
+
+.mui-card-header-inline-right {
+	position: absolute;
+	top: 0;
+	right: 20px;
+	color: #23cc77;
+}
+a.mui-card-header-inline-right:hover {
+	color: #23cc77;
+}
+
+.mui-col-xs-6 {
+    width: 50%;
+}
+
+#segmentedControlContents .mui-table-view-cell {
+	padding: 16px 15px;
+}
+
+
+
+.mui-input-group input {
+	margin-top: 0px;
+}
+.mui-table-view-cell>.mui-slider-right {
+    right: 0;
+    -webkit-transition: -webkit-transform 0ms ease;
+    transition: transform 0ms ease;
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+}
+.mui-table-view-cell>.mui-slider-left, .mui-table-view-cell>.mui-slider-right {
+    position: absolute;
+    top: 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    height: 100%;
+}
+.mui-table-view-cell.mui-transitioning>.mui-slider-handle, .mui-table-view-cell.mui-transitioning>.mui-slider-left .mui-btn, .mui-table-view-cell.mui-transitioning>.mui-slider-right .mui-btn {
+    -webkit-transition: -webkit-transform 300ms ease;
+    transition: transform 300ms ease;
+}
+.mui-table-view-cell>.mui-slider-handle, .mui-table-view-cell>.mui-slider-left .mui-btn, .mui-table-view-cell>.mui-slider-right .mui-btn {
+    -webkit-transition: -webkit-transform 0ms ease;
+    transition: transform 0ms ease;
+}
+.mui-table-view-cell>.mui-slider-handle {
+    position: relative;
+    background-color: #fff;
+}
+.mui-table-view-cell.mui-transitioning>.mui-slider-handle, .mui-table-view-cell.mui-transitioning>.mui-slider-left .mui-btn, .mui-table-view-cell.mui-transitioning>.mui-slider-right .mui-btn {
+    -webkit-transition: -webkit-transform 300ms ease;
+    transition: transform 300ms ease;
+}
+.mui-table-view-cell>.mui-slider-left>.mui-btn, .mui-table-view-cell>.mui-slider-right>.mui-btn {
+    position: relative;
+    left: 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    padding: 0 30px;
+    color: #fff;
+    border: 0;
+    border-radius: 0;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.mui-table-view-cell>.mui-slider-handle, .mui-table-view-cell>.mui-slider-left .mui-btn, .mui-table-view-cell>.mui-slider-right .mui-btn {
+    -webkit-transition: -webkit-transform 0ms ease;
+    transition: transform 0ms ease;
+}
+.mui-btn-danger, .mui-btn-negative, .mui-btn-red {
+    color: #fff;
+    border: 1px solid #dd524d;
+    background-color: #dd524d;
+  
+}
+
+
+.mui-btn-red.mui-btn {
+	  margin-top: 0;
+}
+
+.mui-table-view-cell>.mui-slider-left>.mui-btn:after, .mui-table-view-cell>.mui-slider-right>.mui-btn:after {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    width: 600%;
+    height: 100%;
+    content: '';
+    background: inherit;
+}
+
+.mui-table-view-cell-content {
+    line-height: 1.5;
+}
+.mui-table-view-cell-content .span3 {
+	min-width: 30%;
+	margin-right: 5px;
+	line-height: 40px;
+}
+
+.mui-table-view-cell-content .span7 {
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	word-break: break-all;
+	overflow: hidden;
+}
+
+.mui-table-view-cell.mui-transitioning {
+	padding: 5px 0px 5px 5px;
+}
+.mui-table-view-cell.mui-transitioning:after {
+	left: 5px;
+}
+
+.mui-btn-add {
+		font-size:14px;
+		color:#23cc77;
+		text-align:left;
+	}
+	
+	.mui-btn-add:before {
+		content: url(http://img2.tuniucdn.com/site/m2015/images/tourguide/product-manage/icon-add.png)
+	}
+	.mui-btn-add:hover {
+		color:#23cc77;
+	}
+	
+	.mui-btn-add:active {
+		color:#23cc77;
+		text-shadow: 1px 1px 15px #23cc77;
+	}
+	
+	.mui-btn-add-middle {
+		font-size:16px;
+		color:#23cc77;
+		background:#f4fcf8;
+	}
+	
+	.mui-btn-add-middle:hover {
+		color:#23cc77;
+	}
+	.mui-btn-add-middle:active {
+		text-shadow: 3px 3px 15px #23cc77;
+	}
+	
+	.mui-btn-add-middle:before {
+		content:" ";
+	    padding-right: 10px;
+		content: url(http://img2.tuniucdn.com/site/m2015/images/tourguide/product-manage/icon-add_18_18.png);
+		font-size: 20px;
+		vertical-align: middle;
+	}
+	
+	.mui-btn-remove {
+		font-size:14px;
+		color:#ff7c70;
+		text-align:right;
+	}
+	.mui-btn-remove:hover {
+		color:#ff7c70;
+	}
+	
+	.mui-btn-remove:active {
+		color:#ff7c70;
+		text-shadow: 1px 1px 15px #23cc77;
+	}
+	
+	
+	.mui-card-no-line .mui-table-view:before {
+		height: 0;
+	}
+	
+	.mui-btn-remove-icon:after {
+		content: url(http://img2.tuniucdn.com/site/m2015/images/tourguide/product-manage/icon-delete.png);
+		float: right;
+	}
+	.mui-btn-edit-icon:before {
+		content: url(http://img2.tuniucdn.com/site/m2015/images/tourguide/product-manage/icon-edit.png);
+		float: left;
+	}
+	
+	
+	.mui-card-no-line .mui-table-view-cell:after {
+		height: 0;
+	}
+	
+	.mui-card-no-line .mui-table-view-cell {
+		background:#ffffff;
+		border:1px solid #23cc77;
+		border-radius:6px;
+		margin-bottom: 10px;
+		color:#23cc77;
+	    -moz-box-shadow: 0px 0px 2px #23cc77 inset;
+		box-shadow: 0px 0px 2px #23cc77 inset;
+	}
+	
+	.mui-card-no-line .mui-table-view-cell:last-child {
+		margin-bottom: 0;
+	}
+	
+	.mui-card .mui-table-view-cell-inline {
+		position: relative;
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: flex;
+	    -webkit-box-pack: justify;
+	    -webkit-justify-content: space-between;
+	    justify-content: space-between;
+	    -webkit-box-align: center;
+	    -webkit-align-items: center;
+	    align-items: center;
+	}
+	
+	.mui-table-view-cell-column ._checkbox:after {
+	    position: initial;
+	}
+	
+	.mui-card-no-line .mui-card-header {
+		font-size: 14px;
+	    color: #222222;
+	    text-align: left;
+	}
+	.mui-card-no-line .mui-card-header:after {
+	    height: 0px;
+	}
+	
+	.mui-card-no-line .mui-card-content-inner {
+		padding-top: 0;
+	    padding-bottom: 10px;
+	}
+
+	.click-add {
+		font-size:16px;
+		color:#23cc77;
+		background:#f4fcf8;
+		border:1px solid #23cc77;
+		border-radius:6px;
+	}
+	
+	.click-add:hover {
+		color:#23cc77;
+	}
+	.click-add:active {
+		border: 1px solid #33BC60;
+	 	-moz-box-shadow: 0px 0px 3px #23cc77 inset;
+		box-shadow: 0px 0px 3px #23cc77 inset;
+	}
+	
+	.click-add:before {
+		content:" ";
+	    padding-right: 10px;
+		content: url(http://img2.tuniucdn.com/site/m2015/images/tourguide/product-manage/icon-add_18_18.png);
+		/*content: '＋';*/
+		font-size: 20px;
+		vertical-align: middle;
+	}
+	
+	.mui-card-no-pad.mui-card {
+		margin: 0;
+	}
+	
+	.mui-card-no-pad .mui-card-content-inner {
+		padding: 0 10px;
+	}
+	.mui-card-no-pad .mui-table-view-cell {
+		height: 50px;
+	}
+	.mui-card-no-pad .mui-slider-handle {
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+	.mui-card-no-pad .mui-card-header {
+		font-size:14px;
+		color:#222222;
+		text-align:left;
+	}
+
+ .mui-card-no-pad .mui-card-header:after {
+		background:#e8e8e8; 	
+ }
+ 
+ .mui-card-no-pad .mui-slider-handle-no-pad {
+ 		padding: 0;
+ }
+
+.mui-input-group .mui-input-row:after {
+    -webkit-transform: scaleY(.25);
+    transform: scaleY(0.25);
+    background-color: #c8c7cc;
+}
+
+
+.mui-card-no-line .mui-table-view-cell-grey {
+    		background:#ffffff;
+			border:1px solid #d4d4d4;
+			border-radius:6px;
+			font-size:16px;
+			color:#222222;
+			text-align:left;
+    	}
+    	
+    	.mui-input-border .mui-input-row {
+    		    background: #ffffff;
+    			border: 1px solid #d4d4d4;
+    			border-radius: 6px;
+    			height: 46px;
+    			margin-left: 0;
+    	}
+    	
+    	.mui-input-border .mui-input-row input {
+    		    line-height: 46px;
+			    height: 46px;
+			    padding-left: 0;
+    	}
+    	
+    	.mui-input-group {
+    		margin-top: 10px;
+    	}
+    	
+    	.mui-btn-arrow-right-icon:after{
+    		content: url(http://img2.tuniucdn.com/site/m2015/images/tourguide/product-manage/right-arrow.png);
+    	}
+    	
+    	.mui-form-row {
+    		padding: 0 10px;
+    		background:#ffffff;
+			border:1px solid #d4d4d4;
+			border-radius:6px;
+    	}
+    	
+    	.prompt-title {
+			font-size:12px;
+			color:#222222;
+			text-align:left;
+    	}
+    	
+    	/*此处开始是行政区域实现的样式*/
+    	
+    	.mui-card-list .mui-table-view-cell {
+    		background: #ffffff;
+		    border-radius: 6px;
+    		padding: 7px 5px;
+    	}
+    	
+    	.mui-card-list .mui-card-content-inner {
+    		padding: 0 15px;
+    	}
+    	.mui-card-list .mui-card-header {
+    		padding-bottom: 0;
+    	}
+    	
+    	.mui-card-list .mui-card-header:after {
+    		height: 0;
+    	}
+    	.mui-card-list .mui-table-view:before {
+    		height: 0;
+    	}
+    	.mui-card-list .mui-table-view-cell:after {
+    		left: 0;
+    	}
+    	.mui-card-list .arrow-right {
+    		color: #999;
+    		top: 17px;
+    		right: 5px;
+    	} 
+    	.mui-card-list .no-search-result {
+    		padding: 10px 0;
+    		text-align: center;
+    		font-size: 1.6rem;
+    	}
+		.search_main {
+		    position: relative;
+		    width: 100%;
+		    height: 40px;
+		    border-radius: 4px;
+		    background: #e5e5e5;
+		}
+		.search_main input {
+		    width: 85%;
+		    height: 40px;
+		    margin-bottom: 0;
+		    padding: 0 30px;
+		    border: none;
+		    outline: none;
+		    background-color: transparent;
+		    font-size: 1.4rem;
+		    line-height: 30px;
+		    margin-top: 0;
+		}
+		.search_main .search-button {
+		    position: absolute;
+		    top: 13px;
+		    left: 10px;
+		    color: #aaa;
+		    font-size: 1.4rem;
+		}
+
+
+	    	.mui-card-no-line .mui-table-view-cell-grey {
+    		background:#ffffff;
+			border:1px solid #d4d4d4;
+			border-radius:6px;
+			font-size:16px;
+			color:#222222;
+			text-align:left;
+    	}
+    	
+    	.mui-input-border .mui-input-row {
+    		    background: #ffffff;
+    			border: 1px solid #d4d4d4;
+    			border-radius: 6px;
+    			height: 46px;
+    			margin-left: 0;
+    	}
+    	
+    	.mui-input-border .mui-input-row input {
+    		    line-height: 46px;
+			    height: 46px;
+			    padding-left: 0;
+    	}
+    	
+    	.mui-input-group {
+    		margin-top: 10px;
+    	}
+    	
+    	.mui-btn-arrow-right-icon:after{
+    		content: url(images/right-arrow.png);
+    	}
+    	
+    	.mui-form-row {
+    		padding: 0 10px;
+    		background:#ffffff;
+			border:1px solid #d4d4d4;
+			border-radius:6px;
+    	}
+    	
+    	.prompt-title {
+			font-size:12px;
+			color:#222222;
+			text-align:left;
+    	}
